@@ -33,6 +33,8 @@ export default function RestaurantMenu() {
 
   return (
     <>
+
+
       <h1 className="text-center font-bold my-8 text-xl ">{resInfo?.cards[2]?.card?.card?.info?.name}</h1>
       <p className="text-center text-lg font-bold">{resInfo?.cards[2]?.card?.card?.info?.avgRating} ⭐ - {resInfo?.cards[2]?.card?.card?.info?.cuisines.join(",")}</p>
       {
@@ -42,7 +44,7 @@ export default function RestaurantMenu() {
           />
         ))
       }
-
     </>
+
   )
 }

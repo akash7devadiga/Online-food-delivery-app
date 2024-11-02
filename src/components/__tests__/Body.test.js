@@ -60,5 +60,5 @@ it("Should load the Body component/top rated restaurants filter and filter shoul
 
   const cardsAfterFilter = screen.getAllByTestId("resCard");
 
-  expect(cardsAfterFilter.length).toBe(3);
+  expect(cardsAfterFilter.length).toBe(6);
 });

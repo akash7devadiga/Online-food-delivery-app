@@ -29,7 +29,7 @@ const ItemList = ({ items, dummy }) => {
             </div>
             <p className="text-xs">{item.card.info.description}</p>
           </div>
-          <div className="w-3/12 p-4">
+          <div className="w-3/12 p-4" data-testid="addBtns">
             <div className="absolute">
               <button
                 className="p-2 mx-16 rounded-lg bg-black text-white shadow-lg"
