@@ -45,14 +45,14 @@ const Body = () => {
   return listOfRestaurant.length === 0 ? (
     <Shimmer />
   ) : (
-    <div className='body'>
+    <div className='body' >
       <div className='filter flex'>
         <div className=" m-4 p-4" >
           <input className='border-black border-solid border px-2 rounded-xl' type="text" value={searchText} onChange={hSearch} placeholder="Search for a restaurant" />
         </div>
 
 
-        <button className="px-4 py-2 bg-green-100 m-4 rounded-lg" onClick={() => {
+        <button className="px-4 py-2 bg-green-100 m-4 rounded-lg" data-testid="searchInput" onClick={() => {
           const filteredList = listOfRestaurant.filter(res => res.info.name.toLowerCase().includes(searchText.toLowerCase()));
           setFilteredRestaurants(filteredList);
         }}>
